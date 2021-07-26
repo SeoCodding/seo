@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* 레이아웃 */
+#wrap{width:100%; color:#fff;}
+
+#header{width:100%; height:200px;}
+
+#section{width:100%; height:800px; background-color:#333;}
+
+#footer{width:100%; height:100px; background-color:#909090;}
+
+/* contanier */
+
+.container {width:1280px; height:auto; margin:0 auto;}
+
+/* row */
+
+.row {padding:0 28px;}
+
+/* 헤더 */
+
+#header .container{width:100%;}
+
+.header {width:100%; height:200px; overflow:hidden; position:relative;}
+
+.header h1 {color:#333; font-size:40px; position:absolute; padding-top:15px;}
+
+.header .fa-bars {color:#333; display:none;}
+
+/* 네비 */
+.header nav {float:right;}
+
+.header ul {padding-top:30px;}
+
+.header ul li {display:inline-block; padding:4px;}
+
+.header ul li a {color:#333; font-size:20px;}
+
+/* 헤더아이콘 */
+
+.header_icon {text-align:center; margin-top:70px;}
+
+.header_icon ul {}
+
+.header_icon ul li {
+    display:inline; padding-right:50px; 
+    position:relative; /* span 기준점 */
+}
+
+.header_icon ul li a {background-color:#fff;
+                        border-radius:50%;
+                        width:60px; height:60px; color:#333;
+                        display:inline-block; /* 인라인블록으로 위드값을 적용시킴 아이콘이 및 글이 아래로 내려오게함 */
+                        font-size:30px;
+                        line-height:60px; /* 가운데정렬 */
+}
+
+
+
+.header_icon ul li a span {
+    position:absolute;
+    left:33.33%;
+    top:-50px; /* 위로올리기 */
+    transform:translateX(-50%);
+    font-size:12px;
+    opacity:0;
+    background-color:#fff;
+    color:#333;
+    border-radius:6px 0;    
+    
+}
+
+.header_icon ul li a span:before {
+    content:''; /* 가상요소 */
+	position:absolute;
+	left:50%; bottom:13px;
+	margin-left:-5px;
+	border-top:5px solid #000;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent; /* 화살표만드는작업 */
+}
+
+.header_icon ul li a span:hover {
+    opacity:1;
+    top:-55px;
+}
+
+
+/* 미디어커리 반응형 */
+
+/* 해상도1290일때 */
+@media (max-width:1290px){
+    #wrap{color:#fff;}
+
+    #header{width:100%; height:200px; background-color:#fff;}
+    
+    #section{width:100%; height:800px; background-color:#333;}
+    
+    #footer{width:100%; height:100px; background-color:#555;}
+
+    .container{width:100%;}
+}
+
+/* 해상도1024일때 */
+@media (max-width:1024px){
+    #wrap{color:#fff;}
+
+    #header{width:100%; height:200px; background-color:#fff;}
+
+    #section{width:100%; height:800px; background-color:#111;}
+
+    #footer{width:100%; height:100px; background-color:#555;}
+    
+}
+
+/* 해상도 960일때*/
+@media (max-width:960px){
+    #wrap{color:#fff;}
+
+    #header{width:100%; height:200px; background-color:#fff;}
+
+    #section{width:100%; height:800px; background-color:#333;}
+
+    #footer{width:100%; height:100px; background-color:#909090;}
+}
+
+/* 해상도 768이상일때(태블렛) */
+@media (max-width:768px){
+    #wrap{color:#fff;}
+
+    #header{width:100%; height:200px; background-color:#fff;}
+
+    #section{width:100%; height:800px; background-color:#333;}
+
+    #footer{width:100%; height:100px; background-color:#909090;}
+
+    .header .fa-bars{
+        display:block;
+        position:absolute;
+        top:10px;
+        right:5px;
+        color:#333;
+        font-size:20px;
+    }
+
+    .header nav {display:none;}
+    .header_icon {margin-top:70px;}
+
+}
+
+/* 해상도 600일때(모바일) */
+@media (max-width:600px){
+    #wrap{color:#fff;}
+
+    #header{width:100%; height:200px; background-color:#fff;}
+
+    #section{width:100%; height:800px; background-color:#111;}
+
+    #footer{width:100%; height:100px; background-color:#999;}
+}
+
+/* 해상도 320이일때(아이폰se1세대)*/
+@media (max-width:320px){
+    #wrap{color:#fff;}
+
+    #header{width:100%; height:200px; background-color:#fff;}
+
+    #section{width:100%; height:800px; background-color:#333;}
+
+    #footer{width:100%; height:100px; background-color:#909090;}
+
+    .header_icon {}
+
+    .header ul li {padding:0;}
+}
