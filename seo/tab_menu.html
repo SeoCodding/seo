@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+
+
+    <!--2.제이쿼리 라이브러리 cdn 방식으로 연결하기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+        .container {width:500px; margin: 20px auto;}
+
+        .tab_title li {
+            list-style:none;
+            float:left;
+            width:100px;
+            padding:10px 15px;
+            cursor:pointer;
+            text-align:center;
+            border:1px solid #bebebe;
+        }
+
+        .tab_title li.on {
+            background-color:#ffb715;
+            font-weight:bold;
+        }
+
+        .tab_cont {
+            clear:both;
+            border:1px solid #dedede;
+            height:130px;
+            background-color:#cecece;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <ul class="tab_title">
+            <li class="on">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+        <div class="tab_cont">
+            <div class="on">
+                
+            </div>
+            <div>
+                tab2_content
+            </div>
+            <div>
+                tab3_content
+            </div>
+        </div>
+    </div>
+    
+
+<script>
+    $(document).ready(function(){
+        $(".tab_title li").click(function(){
+            var idx=$(this).index();
+            $(".tab_title li").removeClass("on");
+            $(".tab_title li").eq(idx).addClass("on");
+            $(".tab_cont > div").hide();
+            $(".tab_cont > div").eq(idx).show();
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+
+    <style>
+        * {margin:0; padding:0;}
+        #wrap{
+            width:100%;
+        }
+
+        header{
+            width:100%;
+            height: 150px;
+            background:#81c784;
+        }
+
+        aside {
+            width:30%;
+            height:700px;
+            background:#66bb6a;
+            float:left;
+        }
+
+        section {
+            width:40%;
+            height: 700px;
+            background: #4caf50;
+            float:left;
+
+        }
+
+        article {
+            width:30%;
+            height: 700px;
+            background: #43a047;
+            float:left;
+
+        }
+
+        footer {
+            width:100%;
+            height: 150px;
+            background: #388e3c;
+            clear:both;
+        }
+
+        /* 화면 너비가 0~ 1200px */
+        @media (max-width:1220px){ /* 스크롤나올수도 있어서 여유를 20px줌 */
+            aside{width:40%;}
+            section{width:60%;}
+            article{width:100%; height: 300px;}
+        }
+
+         /* 화면 너비가 0~ 768px */
+         @media (max-width:768px){ /* 스크롤나올수도 있어서 여유를 20px줌 */
+            aside{width:100%; height:300px;}
+            section{width:100%; height: 300px;}
+        }
+
+        /* 화면 너비가 0~ 480px */
+        @media (max-width:480px){ /* 스크롤나올수도 있어서 여유를 20px줌 */
+            header{height:300px;}
+            aside{height:200px;}
+            section{height:200px;}
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside></aside>
+        <section></section>
+        <article></article>
+        <footer></footer>
+    </div>
+</body>
+</html>

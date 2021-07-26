@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹표준 레이아웃4</title>
+
+    <style>
+        #wrap{
+                width:1000px;
+                height:900px;
+                margin:0 auto;
+                font-size:40px;
+                text-align:center;
+                color:#fff;
+                
+        }
+
+        .header{
+                width:1000px;
+                height:100px;
+                background-color: #ff6600;
+                line-height:100px;
+                
+        }
+
+        .nav{
+                width:1000px;
+                height: 100px;
+                background-color: #ffa500;
+                line-height:100px;
+
+        }
+
+        .side{
+                width:300px;
+                height:600px;
+                background-color: #c75701;
+                float:left;
+                line-height:600px;
+
+        }
+
+        /* content1, content2 float left줘도 상관없음 */
+        .content1{
+                width:700px;
+                height: 300px;
+                background-color: #fbff00;
+                float:right;
+                line-height:300px;
+
+        }
+
+        .content2{
+                width:700px;
+                height: 300px;
+                background-color: #c77b17;
+                float:right;
+                line-height:300px;
+
+        }
+
+        .footer{
+                width:1000px;
+                height:100px;
+                background-color: #ebb248;
+                clear:both;
+                line-height:100px;
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <!--div>div*6-->
+    <div id="wrap">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="side">side</div>
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>

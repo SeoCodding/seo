@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹표준-레이아웃1</title>
+
+    <style>
+
+        body{background:#c8e6c9;}
+
+        /* 블록구조를 가운데로 할려면 margin : 0 auto; 하면된다 */
+        /* 영어를 다 대문자로 만드는방법 text-transform : uppercase */
+        /* line-height 속성을 쓰면 가운데에 오게할수있다. 한줄일때만가능 값은 해당되는 높이와 동일하게넣기 */
+        #wrap {width:1000px; height:900px; margin:0 auto; font-size:40px; color:#fff; text-align:center; text-transform: uppercase; }
+
+        #header{width:1000px; height:100px; background:#2e7d32; line-height:100px;}
+
+        #nav{width:1000px; height: 100px;  background: #388e3c; line-height: 100px;}
+
+        /*float : 블록요소의 정렬상태를 설정해주는것 */
+
+        #side{width: 300px; height: 600px; background: #43a047; float: left; line-height: 600px; }
+
+        #contents{width: 700px; height: 600px; background: #4caf50; float: left; line-height: 600px;}
+
+        /* 사이드랑 콘텐츠에 float을주면 푸터가 안보인다 그때 
+            푸터에 float 주면 푸터가 보인다. */
+        #footer{width:1000px; height:100px; background: #66bb6a; float: left; line-height:100px;}
+    </style>
+
+</head>
+<body>
+<!-- 전체를 감싸다라는 의미 : wrap-->
+<div id="wrap">  
+    <div id="header">header</div>
+    <div id="nav">nav</div>
+    <div id="side">side</div>
+    <div id="contents">contents</div>
+    <div id="footer">footer</div>
+</div>
+
+</body>
+</html>
