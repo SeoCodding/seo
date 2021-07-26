@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+
+/* 모바일 css */
+
+@media screen and (max-width:325px){
+
+
+/* 배경이미지 */
+  
+   #wrap {
+    width:100%;
+  }
+
+  header {
+    width:100%;
+    height:50px;
+    
+  }
+
+  button i.fa-bars {
+    position:absolute;
+    top:20px;
+    font-size:20px;
+    cursor:pointer;
+   }
+ 
+   nav {
+    width:100%;
+    position:relative;
+    background-color:rgba(252, 252, 252, 0.7); 
+    display:none;
+    z-index:9999;
+   }
+ 
+   button i.fa-times {
+    position:absolute;
+    font-size:20px;
+    top:2px;
+    right:0px;
+    z-index:9999;
+    cursor:pointer;
+ 
+   }
+ 
+  
+   nav .lnb {
+    margin-top:5px;
+    
+   }
+   
+   nav .lnb li {
+    display:inline;
+    border-right:1px solid #333;
+    
+   }
+ 
+   nav .lnb li a {
+    font-size:8px;
+    color:#333;
+    margin:10px; /* 목록끼리간격 */
+    font-weight:bold;
+
+   }
+ 
+   nav .lnb li a:hover {
+     text-decoration:underline;
+   }
+ 
+
+   section {
+    width:90%;
+    height:470px;
+    position:relative;
+    text-align:center;
+  }
+
+  section h1 img {
+    width:50%;
+    
+  }
+
+  section h2 img {
+    width:50%;
+  }
+
+  section p img {
+    width:100%;
+  }
+
+  .article1 {
+   width:5%;
+   position:absolute;
+   bottom:50px;
+   left:0px;
+   font-size:50px;
+   
+ }
+
+  .article2 {
+    width:5%;
+    position:absolute;
+    bottom:50px;
+    right:0px;
+    font-size:50px;
+    
+  }
+
+  footer {
+    width:100%;
+    height:50px;
+    text-align:center;
+   }
+ 
+   footer address {
+    font-size:20px;
+    color:#333;
+   }
+
+
+}

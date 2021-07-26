@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+
+/* pc.css */
+
+@media screen and (min-width:1024px) {
+   /* 배경 이미지 */
+  
+   body {
+        background-image: url(../main_img/paper.jpg);
+        
+   }
+
+   
+   #wrap {
+     width:100%;
+   }
+
+   header {
+     width:100%;
+     height:200px;
+     position:relative; /* 토글기준점 */
+     
+   }
+
+    button i.fa-bars {
+    position:absolute;
+    top:20px;
+    font-size:40px;
+    cursor:pointer;
+   }
+
+   nav {
+    width:100%;
+    position:relative;
+    background-color:rgba(252, 252, 252, 0.7);
+    display:none;
+    z-index:9999;
+   }
+
+   button i.fa-times {
+    position:absolute;
+    font-size:40px;
+    top:2px;
+    right:0px;
+    z-index:9999;
+    cursor:pointer;
+
+   }
+
+  
+   nav .lnb {
+    margin-top:40px;
+    
+   }
+
+   nav .lnb li {
+    display:inline;
+    border-right:1px solid #333;
+    
+   }
+
+   nav .lnb li a {
+    font-size:16px;
+    color:#333;
+    margin:20px; /* 목록끼리간격 */
+    font-weight:bold;
+
+   }
+
+   nav .lnb li a:hover {
+     text-decoration:underline;
+   }
+    
+  /* 섹션 */ 
+   section {
+     width:100%;
+     height:800px;
+     position:relative;
+   }
+
+   section .sec_tit {
+    text-align:center;
+    
+  }
+
+  section .sec_tit h1 img {
+    width:20%;
+  }
+
+  section .sec_tit h2 img {
+    width:20%;
+  }
+  
+  section .sec_tit p img {
+    width:60%;
+    
+  }
+
+   .article1 {
+    position:absolute;
+    top:20%;
+    left:0px;
+    font-size:100px;
+    
+  }
+
+   .article2 {
+     position:absolute;
+     top:20%;
+     right:0px;
+     font-size:100px;
+     
+   }
+
+   footer {
+    width:100%;
+    height:100px;
+    
+  
+  
+   }
+
+   footer address {
+     padding-top:50px;
+     font-size:20px;
+     color:#333;
+     text-align:center;
+   }
+
+}
+
+
